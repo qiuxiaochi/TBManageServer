@@ -13,6 +13,8 @@ public interface IJsMgService {
 
 	String addJishu(keFu keFu,Jishu jishu);                 //添加技术信息
 	String supplyJishu(keFu keFu,Jishu jishu);              //补充技术信息
+	
+	//投票时  比如之前同一个客服投了支持，现在这个客服又要投票反对，那么之前的支持票还留着继续就行
 	String voteJishu(Vote vote);                            //某客服给技术投票和贴标签
 	
 	
@@ -26,7 +28,6 @@ public interface IJsMgService {
 	
 	Vector<Jishu> getYesJishus();                   //获得好评票数多于差评票数的技术
 	Vector<Jishu> getNoJishus();                   //获得差评票数多于好评票数的技术
-	
 	
 	
 }
