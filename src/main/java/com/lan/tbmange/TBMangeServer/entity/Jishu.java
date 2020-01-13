@@ -15,6 +15,9 @@ public class Jishu {
 	String skill = "";              //会的技术语言
 	
 	
+	public Jishu() {
+		
+	}
 	
 	public Jishu(String qq, String wx, int yes, int no, String info, String label, String skill) {
 		super();
